@@ -1,32 +1,83 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:regular,italic');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100;300;400;500&display=swap');
 
 body {
 	font-family: Work Sans;
 	font-size: 16px;
 	line-height: 1.5;
-	background-color: #000;
-	color: #ffffff;
+	background-color: #fff;
+	color: #000;
 
-	padding-top: 104px;
-
+	padding-top: 12em;
 }
 
 a {
-	color: #ffffff;
+	color: #000;
 	text-decoration: none;
 }
+
+/* PORTFOLIO */
+
+#manifesto, #portfolio {
+	text-align: center;
+}
+
+#portfolio{
+	padding: 5em 5em;
+}
+
+#manifesto {
+	padding: 1em 20em;
+}
+
+#allPage h1 {
+	font-family:'M PLUS Code Latin', sans-serif;
+	font-weight: 600;
+	font-size: 1.8em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding-bottom: 0.8em;
+}
+
+#allPage h2 {
+	font-family:'M PLUS Code Latin', sans-serif;
+	font-weight: 500;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+#allPage h3 {
+	font-family:'M PLUS Code Latin', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.work {
+	margin-bottom: 6em;
+}
+
+.work-info {
+	margin: 1em auto;
+	text-align: justify;
+	width: 60%;
+}
+
+/* HEADER */
+
 header {
 	position: fixed;
 	top: 0px;
 	left: 0px;
 	width: 100%;
-	padding: 20px;
+	padding: 1em 2em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
+	/* background-color: #fff; */
 	z-index: 5;
-
 }
 
 header h1 {
@@ -48,9 +99,22 @@ header nav a:hover {
 }
 
 header nav a.selected {
-	border-color: #ffffff;
+	border-color: #000;
 }
 
+
+
+/* BOOTSTRAP */
+
+.carousel-inner img {
+	margin: auto;
+  }
+
+
+
+
+
+/* OLD */
 .photos {
 	max-width: 1080px;
 	margin-left: auto;
@@ -218,10 +282,11 @@ footer nav a {
 	}
 
 
-/* In case we add a button */
+
+/* 
 	button {
 	  background-color: blue;
-	  color: #ffffff;
+	  color: #000;
 	  border: none;
 	  font-size: 24px;
 	  font-family: Work Sans;
@@ -229,11 +294,11 @@ footer nav a {
 	}
 
 	button:hover {
-  background-color: #ffffff;
+  background-color: #000;
 	transition: 0.5s;
 	color: blue;
 }
-
+*/
 
 
 /* Media Queries */
