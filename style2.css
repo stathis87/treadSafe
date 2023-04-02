@@ -2,12 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100;300;400;500&display=swap');
 
 body {
-	font-family: Work Sans;
+	font-family:'M PLUS Code Latin', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
 	background-color: #fff;
 	color: #000;
-
 	padding-top: 6em;
 }
 
@@ -39,6 +38,28 @@ header h1 {
 	width: 15em;
 }
 
+h1 {
+	font-weight: 600;
+	font-size: 1.8em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding-bottom: 0.8em;
+}
+
+h2 {
+	font-weight: 500;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 1em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
 header nav a {
 	margin-left: 10px;
 	/* hover transition */
@@ -62,7 +83,7 @@ header nav a.selected {
 #manifesto, #portfolio {
 	/* height: 100%; */
 	text-align: center;
-	margin-top: 3em;
+	margin-top: 4em;
 }
 
 /* #portfolio{
@@ -73,33 +94,10 @@ header nav a.selected {
 	padding: 1em 20em;
 }
 
-#allPage h1 {
-	font-family:'M PLUS Code Latin', sans-serif;
-	font-weight: 600;
-	font-size: 1.8em;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	padding-bottom: 0.8em;
-}
-
-#allPage h2 {
-	font-family:'M PLUS Code Latin', sans-serif;
-	font-weight: 500;
-	font-size: 1.5em;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
-
-#allPage h3 {
-	font-family:'M PLUS Code Latin', sans-serif;
-	font-weight: 400;
-	font-size: 1em;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
 
 .work {
 	margin-bottom: 6em;
+	margin-top: 3em;
 }
 
 .work-info {
@@ -107,6 +105,8 @@ header nav a.selected {
 	text-align: justify;
 	width: 60%;
 }
+
+
 
 
 
