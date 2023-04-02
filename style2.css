@@ -117,6 +117,31 @@ header nav a.selected {
 	margin: auto;
   }
 
+.carousel-item {
+	height: 60vh;
+	overflow: hidden;
+	position: relative;
+	
+}
+
+
+.carousel-item img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #222222;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+	height: auto;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+
 
 /* OLD */
 .photos {
