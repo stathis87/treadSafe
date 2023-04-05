@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ThreadSafe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./base.css">
+  <link rel="stylesheet" type="text/css" href="./loader.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+	<meta name="fragment" content="!">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+	<!-- Facebook Sharing -->
+	<meta property="og:url"                content="https://"/>
+	<meta property="og:type"               content="website"/>
+	<meta property="og:title"              content="musence"/>
+	<meta property="og:description"        content="ThreadSafe Collective"/>
+	<meta property="og:image"              content="/images/image_3.jpg"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://">
+	<meta property="twitter:title" content="ThreadSafe">
+	<meta property="twitter:description" content="Art collective">
+	<meta property="twitter:image" content="/images/image_3.jpg">
+
+  
+</head>
+
+
+<body onload="loadPage()">
+  <div id="loader">
+    <!-- <img src="/images/screen-loader.jpg"/> -->
+  </div>
+  
+  <div id="allPage">
+    <header>
+      <a href="index.html">
+        <h1>
+          <img src="images/weblogo2.png" alt="_threadsafe logo" style="height: 5em;">
+        </h1>
+      </a>
+      <!-- 
+      <nav>
+        <a href="index.html" class="selected">home</a>
+        <a href="about.html">about</a>
+      </nav> 
+    -->
+    </header>
+    <section id="manifesto">
+      <h1>Our Manifesto</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illo voluptatum repellendus et laboriosam laborum veritatis temporibus eius quae, eveniet dolor similique quia error voluptatem ea asperiores harum deserunt iste?</p>
+    </section>
+  
+
+    </section>
+    <section id="portfolio">
+      <h1>
+        portfolio
+      </h1>
+
+      <!-- IEVA -->
+
+      <div class="work">
+        <h2>
+          SOME SILVER BURNS
+        </h2>
+        <h3>
+          Ieva Vaiti
+        </h3>
+        <p>Performance</p>
+      
+        <div id="carouselIeva" class="carousel slide w-50 m-auto mt-5 mb-5" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/ieva/1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/ieva/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/ieva/3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselIeva" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselIeva" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="work-info">
+          Some Silver Burns is a multimedia contemporary dance performance shown at The Place, London in February 2020. Touching
+          on themes of fragility and loss, the piece reflects on our journey to healing in four movements. I co-directed the piece with my
+          creative partner Amy Dang and composed the music.
+          <br> Animation: Amy Dang / Choreography: Magnus Westwell /
+          <br> Dancers: Olivia Grassot & Oscar Jinghuli / Costumes: Khanh Brice-Nguyen
+        </p>
+
+        <p class="work-info">
+          Phase of the project: Completed
+        </p>
+        <p class="work-info">
+          <a href="https://vimeo.com/688557855/7dcd9abec5" target=”_blank>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-vimeo" viewBox="0 0 16 16">
+              <path d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+
+      <!-- GRACIA -->
+      
+      <div class="work">
+        <h2>
+          MORPHED MEMORIES
+        </h2>
+        <h3>
+          Maria Gracia Cebrecos
+        </h3>
+        <p>Photography & interactive installation</p>
+      
+        <div id="carouselGracia" class="carousel slide w-50 m-auto mt-5 mb-5" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/gracia/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/gracia/2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/gracia/3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselGracia" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselGracia" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="work-info">
+          We all experience some form of dementia in our lives. This room contains some of “his” memories, brought to life by the presence 
+          of visitors. The memories reveal themselves, but also fade away unless there is a human presence to perceive them. Using
+          his archival photographs and real time camera projections....(continue). The installation creates a living room scenery, the place
+          where memories are collected and experiences are shared. With three different sets of interactions based on proximity and
+          play, visitors can immerse themselves in the memories of the room.
+        </p>
+
+        <p class="work-info">
+          Phase of the project: Ongoing
+        </p>
+        <p class="work-info">
+          <a href="https://vimeo.com/747707262" target=”_blank>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-vimeo" viewBox="0 0 16 16">
+              <path d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+
+      <!-- EWAN -->
+      
+      <div class="work">
+        <h2>
+          NAUSEA
+        </h2>
+        <h3>
+          Ewan Peng
+        </h3>
+        <p>Physical computing</p>
+      
+        <div id="carouselEwan" class="carousel slide w-50 m-auto mt-5 mb-5" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/ewan/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/ewan/2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/ewan/3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselEwan" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselEwan" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="work-info">
+          This is a cyclic vomiting machine which has a mouth, two lungs, and some weird sounds. The machine can only do one thing,
+          which is puke the blood again and again. It has a plastic lung to store the blood, a pressure sensor to control the sound when
+          the lung moves, and a silicone mouth for puke.
+        </p>
+
+        <p class="work-info">
+          Phase of the project: Completed
+        </p>
+        <p class="work-info">
+          <a href="https://vimeo.com/780794555" target=”_blank>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-vimeo" viewBox="0 0 16 16">
+              <path d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+
+      <!-- NATHAN -->
+      
+      <div class="work">
+        <h2>
+          ALEPH-NULL
+        </h2>
+        <h3>
+          with-lasers
+        </h3>
+        <p>Audio-Visual Performance & Real Time Graphics</p>
+      
+        <div id="carouselNathan" class="carousel slide w-50 m-auto mt-5 mb-5" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/nathan/1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/nathan/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/nathan/3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselNathan" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselNathan" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="work-info">
+          Continues the artists work and research, which originated in the work of John and James Whitney. By reinterpreting the physical 
+          techniques, supported by early computing technology used by them, and making use of the technology available in the 21st
+          century, new forms and directions can be explored, tracing paths previously not taken. By using this underlying mathematical
+          model to create both visuals and sound, the real time performance is a meditation and exploration of the unconscious, and its
+          continued influence in our everyday activities.
+        </p>
+
+        <p class="work-info">
+          Phase of the project: Completed
+        </p>
+        <p class="work-info">
+          <a href="https://vimeo.com/640149883" target=”_blank>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-vimeo" viewBox="0 0 16 16">
+              <path d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+
+      <!-- ROBIN -->
+      
+      <div class="work">
+        <h2>
+          MACHINE DRAWING: SPACE AND TIME
+        </h2>
+        <h3>
+          Robin Leverton
+        </h3>
+        <p>Drawing & Physical computing</p>
+      
+        <div id="carouselRobin" class="carousel slide w-50 m-auto mt-5 mb-5" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/robin/3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/robin/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/robin/2.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselRobin" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselRobin" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="work-info">
+          Space and Time is an installation which utilises a custom-made pen-plotter to continuously draw the space it faces. The work
+          continues my interests in systemic collapse and de-centralised responsibility, whereby through intended interaction with the
+          system, the participant is partially responsible for its ultimate failure. In respect to Machine Drawing: Space and Time this is
+          represented by the continuous redrawing over the same page; A space’s architecture may be neatly re-constructed, but its
+          living occupants create a dynamic subject that changes with each frame taken by the machine’s camera....
+        </p>
+
+        <p class="work-info">
+          Phase of the project: Ongoing
+        </p>
+        <p class="work-info">
+          <a href="https://vimeo.com/693756592" target=”_blank>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-vimeo" viewBox="0 0 16 16">
+              <path d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+
+      <!-- STATHIS -->
+      
+      <div class="work">
+        <h2>
+          POSE_TRANSPOSE
+        </h2>
+        <h3>
+          Stathis Doganis
+        </h3>
+        <p>Website, video dance & interactive map</p>
+      
+        <div id="carouselStathis" class="carousel slide w-50 m-auto mt-5 mb-5" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/stathis/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/stathis/2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/stathis/3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselStathis" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselStathis" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="work-info">
+          “Pose_Transpose” is at once a performance in public and private space, a film shoot, a film, and a website hosting an utterly
+          idiosyncratic map of the city.The work renders an experiential observation of the events that unfolded in quarantine in 2020–
+          2021. A map of movement traces has been created with a view to juxtaposing recent experiences with the limitations imposed
+          on freedom of movement.
+          <br>
+          Concept, choreography, direction & text: Stathis Doganis, Myrto Delimichali / Performers: Antonis Antoniou, Maria Vourou, Myrto Delimichali, Stathis Doganis, Loukiani Papadaki, Thanos Ragkousis, Despina Sanida-Krezia, Fotini
+          Stamatelopoulou, Despina Stasinou / Visual performance (mask construction): Antonis Antoniou / Music composition: Rafailia Bampasidou / Filming: Stathis Doganis, Dimitris Tranos / Audio mastering: Michalis Ikonomidis
+        </p>
+
+        <p class="work-info">
+          Phase of the project: Completed
+        </p>
+        <p class="work-info">
+          <a href="https://vimeo.com/523412211" target=”_blank>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-vimeo" viewBox="0 0 16 16">
+              <path d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+
+      <!-- KRUTI -->
+            
+      <div class="work">
+        <h2>
+          HER LIMITS
+        </h2>
+        <h3>
+          Kruti Shah
+        </h3>
+        <p>Sculpture & Physical computing</p>
+
+        <div id="carouselKruti" class="carousel slide w-50 m-auto mt-5 mb-5" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/kruti/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/kruti/2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/kruti/3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselKruti" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselKruti" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="work-info">
+          It is a wooden kinetic sculpture with motorized hands which signifies Household activities, Money, Beauty and childcare. The four major responsibilities society expects from  women  in the 21st century. By using these robotic hands we wanted to disembody the women from her duties, thus freeing her of the labour she endures. The vibrant color signifies the invisible effort that she is making on a daily basis. 
+        </p>
+
+        <p class="work-info">
+          Phase of the project: Completed
+        </p>
+        <p class="work-info">
+          <a href="https://vimeo.com/813351483" target=”_blank>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-vimeo" viewBox="0 0 16 16">
+              <path d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+
+      <!-- MILLIEON -->
+            
+      <div class="work">
+        <h2>
+          Space Colony
+        </h2>
+        <h3>
+          Millieon Hu
+        </h3>
+        <p>Visual projection & Computer Vision</p>
+
+        <div id="carouselMillieon" class="carousel slide w-50 m-auto mt-5 mb-5" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/millieon/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/millieon/2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/millieon/3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMillieon" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMillieon" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="work-info">
+          This is a simulation of ant colony behaviour, a multi-agent system where the agents search for food, leave pheromones and die. This project uses computer vision to find the "food" in real life; the virtual ants search for the real food that exists in our physical space and gradually form a trail around the food. This work meant to break the boundary between the physical and virtual reality.
+        </p>
+
+        <p class="work-info">
+          Phase of the project: Completed
+        </p>
+        <p class="work-info">
+          <a href="https://youtu.be/9BGLSs1QsW8" target=”_blank>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+
+      <!-- SOFIA -->
+            
+      <div class="work">
+        <h2>
+          Synesthesia
+        </h2>
+        <h3>
+          Sofia Taipa
+        </h3>
+        <p>Interactive installation & Physical computing</p>
+
+        <div id="carouselSofia" class="carousel slide w-50 m-auto mt-5 mb-5" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/sofia/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/sofia/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/sofia/3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSofia" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselSofia" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="work-info">
+          Synesthesia immerses the audience in instances of chaos and harmony. It is an interactive experience on the visualization of pure frequencies, focusing on how these can be perceived in an unconventional manner. The movement induced by the sound waves creates intricate objects with a three-dimensional nature. It investigates the threshold where sound corrugates into image - the moment it becomes visually perceptible. What was once incorporeal becomes almost tangible.
+        </p>
+
+        <p class="work-info">
+          Phase of the project: Ongoing
+        </p>
+        <p class="work-info">
+          <a href="https://vimeo.com/780719580" target=”_blank>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-vimeo" viewBox="0 0 16 16">
+              <path d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+
+    </section>
+
+    </section>
+
+    <section id="about">
+
+
+    </section>
+
+
+
+   
+  </div>
+
+  <footer>
+    <!-- Scripts -->
+  <script src="js/pageLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </footer>
+  
+</body>
+
+<!-- 
+
+   <section class="list">
+     
+      <a href="#">
+        Ewan Peng
+        <img src="images/ewan.jpg" alt="From the work Crime and Punishement by Ewan Peng">
+      </a>
+  
+      <a href="#">
+        Ieva Vaitiek
+        <img src="images/ieva.gif" alt="From the work Some Silver Burns by Ieva Vaitiek">
+      </a>
+  
+      <a href="#">
+        Kruti Shah
+        <img src="images/kruti.jpg" alt="From the work Water Shadows by Kruti Shah">
+      </a>
+  
+      <a href="#">
+        Maria Gracia Cebrecos
+        <img src="images/gracia.jpg" alt="From the work Morphed Memories by Maria Gracia Cebrecos ">
+      </a>
+  
+      <a href="#">
+        Millieon Hu
+        <img src="images/millieon.png" alt="From the work Shape of a hug by Millieon Hu">
+      </a>
+  
+      <a href="#">
+        Nathan Adams
+        <img src="images/nathan.jpg" alt="From the work Plagioclase by Natan Adams">
+      </a>
+  
+      <a href="#">
+        Robin Leverton
+        <img src="images/robin.jpg" alt="From the work Vertical Garden by Robin Leverton">
+      </a>
+  
+      <a href="#">
+        Sofia Taipa
+        <img src="images/sofia.png" alt="From the work Synesthesia by Sofia Taipa">
+      </a>
+  
+      <a href="#">
+        Stathis Doganis
+        <video autoplay muted loop onmouseover="this.play()" onmouseout="this.pause();" title="Pose Transpose website by Stathis Doganis">
+          <source src="videos/video-pose.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </a>
+      
+    </section>
+ -->

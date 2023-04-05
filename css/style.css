@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:regular,italic');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100;300;400;500&display=swap');
+
+body {
+	font-family:'M PLUS Code Latin', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #fff;
+	color: #000;
+	padding-top: 6em;
+}
+
+header {
+	margin-bottom: 2em;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding: 1em 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* background-color: #fff; */
+	z-index: 5;
+}
+
+header h1 {
+	width: 15em;
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 1.8em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding-bottom: 0.8em;
+}
+
+h2 {
+	font-weight: 500;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 1em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+header nav a {
+	margin-left: 10px;
+	/* hover transition */
+	transition: border 0.3s ease-in;
+	border-bottom: solid 2px rgba(0, 0, 0, 0);
+	padding-bottom: 3px;
+}
+
+header nav a:hover {
+	border-bottom: solid 2px #555;
+
+}
+
+header nav a.selected {
+	border-color: #000;
+}
+
+
+/* PORTFOLIO */
+
+#manifesto, #portfolio {
+	/* height: 100%; */
+	text-align: center;
+	margin-top: 4em;
+}
+
+/* #portfolio{
+	padding: 5em 5em;
+} */
+
+#manifesto {
+	padding: 1em 20em;
+}
+
+
+.work {
+	margin-bottom: 6em;
+	margin-top: 3em;
+}
+
+.work-info {
+	margin: 1em auto;
+	text-align: justify;
+	width: 60%;
+}
+
+
+
+
+
+
+/* BOOTSTRAP */
+
+.carousel-inner img {
+	margin: auto;
+  }
+
+.carousel-item {
+	height: 60vh;
+	overflow: hidden;
+	position: relative;
+	
+}
+
+
+.carousel-item img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #222222;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+	height: auto;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+
+
+/* OLD */
+.photos {
+	max-width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 10px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+
+.photo {
+	width: 300px;
+	margin: 10px;
+	position: relative;
+}
+
+.photo img {
+	transition: filter 0.3s;
+}
+
+.photo:hover img {
+	filter: grayscale(100%);
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* style of the overlay box */
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	transition: opacity 0.7s;
+	z-index: 2;
+}
+
+.photo:hover .overlay {
+	opacity: 1;
+}
+
+.photo h2 {
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	font-size: 32px;
+	line-height: 1.2;
+}
+
+.small {
+	width: 220px;
+}
+
+.large {
+	width: 400px;
+}
+
+
+/* LIST PAGE  */
+
+.intro-text {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 56px;
+	line-height: 1;
+	max-width: 920px;
+	margin-top: 120px;
+	text-align: center;
+}
+
+.list {
+	max-width: 770px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 56px;
+	line-height: 1.2;
+	margin-top: 120px;
+}
+
+.list {
+	padding: 30px;
+}
+
+
+/* this is a pseudo element that allows to insert the bar after an element */
+.list a:after {
+	content: "/";
+}
+
+
+/* delete the content of after */
+.list a:last-child:after {
+	content: "";
+}
+
+.list a img {
+	opacity: 0;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 700px;
+	pointer-events: none;
+	/* transition */
+	transition: opacity 0.3s;
+}
+
+.list a video {
+	opacity: 0;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 700px;
+	pointer-events: none;
+	/* transition */
+	transition: opacity 0.3s;
+}
+
+
+.list a:hover img {
+	opacity: 1;
+}
+
+.list a:hover video {
+	opacity: 1;
+}
+
+
+
+footer {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer p {
+	/* float: left; */
+	}
+
+footer nav {
+	/* float: right; */
+	}
+
+footer nav a {
+	width: 16px;
+	margin-left: 10px;
+	display: inline-block;
+	}
+
+
+	/* About page  */
+
+	.txtabout {
+		margin-left: auto;
+		margin-right: auto;
+		line-height: 1.5;
+		max-width: 920px;
+		margin-top: 80px;
+		text-align: left;
+		font-size: 22px;
+		padding: 0 30px;
+	}
+
+
+
+/* 
+	button {
+	  background-color: blue;
+	  color: #000;
+	  border: none;
+	  font-size: 24px;
+	  font-family: Work Sans;
+	  padding: 8px 16px 8px 16px;
+	}
+
+	button:hover {
+  background-color: #000;
+	transition: 0.5s;
+	color: blue;
+}
+*/
+
+
+/* Media Queries */
+
+
+@media (max-width: 940px) {
+	.contact {
+		max-width: 660px;
+	}
+
+
+	#manifesto, #portfolio {
+		padding: 1em 2em;
+	}
+
+	.intro-text {
+		padding: 0 30px;
+	}
+
+}
+
+@media (max-width: 630px) {
+
+	
+
+}
+
+@media (max-width: 680px) {
+
+	.contact {
+		padding: 0 30px;
+	}
+
+}
+
+	@media (max-width: 450px) {
+		.photos {
+			/* justify-content: center; */
+		}
+	}
